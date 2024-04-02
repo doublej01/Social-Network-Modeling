@@ -32,6 +32,9 @@ This project will primarily focus on the number of views of job postings from Li
 - Build predictive models to forecast the number of views for new job postings based on features extracted from the dataset.
 - Utilize regression techniques, such as linear regression or random forest regression, to predict the views of job postings.
 - Evaluate model performance using appropriate metrics and fine-tune models to improve accuracy.
+- Regression models like Linear Regression, Random Forest.
+- Natural Language Processing: word embedding.
+- Evaluation Metrics: Mean Absolute Percentage Error (MAPE) and R2 to assess model performance.
 
 **More solutions will be added as we delve into modeling and evaluations in Sprint 2 and 3.**
 
@@ -89,6 +92,11 @@ The dataset consists of the following variables:
 - Analyze distributions of variables
 - Visualize patterns and correlations 
 - Formulate initial questions for further analysis
+
+4. **Baseline Modeling:**
+- Linear regression, random forest
+- Evaluation metrics: MAPE and R-squared
+- Interpret model coefficients 
 
 **More steps will follow to address the problem area in more details using various modelling techniques.**
 
