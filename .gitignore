@@ -1,0 +1,5 @@
+*.csv
+*.json
+.DS_Store
+lexvec-wikipedia-word-vectors
+
