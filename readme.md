@@ -4,7 +4,7 @@ Dataset Link: https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data
 
 Author: JJ Park
 
-Date: 28/02/2024
+Date: 15/05/2024
 
 Contact: doublej01@outlook.com
 
@@ -32,17 +32,15 @@ This project will primarily focus on the number of views of job postings from Li
 - Build predictive models to forecast the number of views for new job postings based on features extracted from the dataset.
 - Utilize regression techniques, such as linear regression or random forest regression, to predict the views of job postings.
 - Evaluate model performance using appropriate metrics and fine-tune models to improve accuracy.
-- Regression models like Linear Regression, Random Forest.
+- Regression models like Linear Regression, Random Forest and XG Boost.
 - Natural Language Processing: word embedding.
-- Evaluation Metrics: Mean Absolute Percentage Error (MAPE) and R2 to assess model performance.
-
-**More solutions will be added as we delve into modeling and evaluations in Sprint 2 and 3.**
+- Evaluation Metrics: Mean Absolute Error (MAE) and R^2 to assess model performance.
 
 ### Impact of the Solutions
-The analysis of the LinkedIn job posting dataset can add significant values to:
 
-- Companies and Recruiters: Gain insights into which elements within a job posting attract more applicants, allowing them to optimize their job postings and recruitment strategies. This can lead to increased visibility, better quality applicants, and reduced time-to-hire.
-- Job Applicants: Access trends and insights from job postings with high views, helping them understand market demands and tailor their applications to align with popular requirements. This can improve their chances of securing relevant job opportunities and making informed career decisions.
+The analysis of LinkedIn job postings offers considerable value to both employers and job seekers, potentially reshaping the recruitment landscape. For companies and recruiters, understanding which aspects of a job posting attract the most applicants allows for more targeted and effective recruitment strategies. Such insights can enhance job post visibility, attract higher quality candidates, and decrease the time it takes to fill a position. This is critical in a job market where, according to LinkedIn, 89% of hiring managers report finding the right candidate within a month can significantly save costs and increase team productivity.
+
+For job applicants, having access to detailed analytics on highly viewed job postings provides a wealth of information on current market trends and the most sought-after skills and experiences. This knowledge enables candidates to tailor their applications to better meet the needs of employers, significantly boosting their chances of securing jobs that match their skills and career aspirations. A survey from Zety found that tailored applications are 30% more likely to receive positive responses from employers. By effectively leveraging the insights from LinkedIn job posting analyses, both recruiters and job seekers can make more informed decisions, enhancing efficiency and efficacy in the job market, which is crucial for economic growth and personal career development.
 
 ### Dataset Description
 The dataset consists of the following variables:
@@ -94,10 +92,55 @@ The dataset consists of the following variables:
 - Formulate initial questions for further analysis
 
 4. **Baseline Modeling:**
-- Linear regression, random forest
-- Evaluation metrics: MAPE and R-squared
+- Linear regression
+- Evaluation metrics: MAE and R-squared
 - Interpret model coefficients 
 
-**More steps will follow to address the problem area in more details using various modelling techniques.**
+5. **NLP**
+- Splitting the dataset into train and test sets
+- Identifying key words or phrases 
+- Word Embedding
 
-**Repository User Guide and Notebook Usage Instructions will be added in Sprint 2 and 3.**
+6. **Advanced Modeling**
+- Random Forest Regressor
+- XGBoost Regressor
+- Evaluation metrics: MAE and R-squared
+
+7. **Summary & Business Implications**
+- Overall summary of the findings
+- Limitations and Next steps
+- Business objectives and impacts on the society 
+
+## Repository Navigation
+Folders:
+ 1. **Documents** : Sprint1, Sprint2, Sprint3 presenations.
+ 2. **Notebooks** :
+    
+    a.PartI_LinkedIn_Preliminary_EDA.ipynb
+    
+    b.PartII_Advanced_EDA_and_Modeling.ipynb
+    
+    c.PartIII_NLP_and_Advanced_Modeling.ipynb
+    
+ 3. **Data** : All the dataset CSVs
+
+ 4. **readme.md** : Details about this project.
+
+## Notebook Usage Instructions
+
+**Execution Order**
+
+To run this entire project download all the files in the **Notebooks** folder into one single folder and run each notebook in this order: 
+
+1. PartI_LinkedIn_Preliminary_EDA.ipynb
+2. PartII_Advanced_EDA_and_Modeling.ipynb
+3. PartIII_NLP_and_Advanced_Modeling.ipynb
+
+The data files(CSVs) for each of these notebboks is present in the **'Data'** folder:
+
+## Acknowledgements and Source
+**Source:** https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data?select=job_postings.csv
+
+
+
+
