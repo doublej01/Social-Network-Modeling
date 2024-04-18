@@ -1,6 +1,6 @@
 # Capstone Project: Number of Views on LinkedIn Job Postings
 
-Dataset Link: https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data?select=job_postings.csv
+Dataset Link: https://drive.google.com/drive/folders/14E6gphWmyFft1VgnIfx0yqqb8aOsJats?usp=sharing
 
 Author: JJ Park
 
@@ -83,7 +83,9 @@ The dataset consists of the following variables:
 
 2. **Data Preprocessing:**
 - Address data quality issues
-- Deal with null values
+- Check for Datatypes
+- Filter duplicates
+- Handle null values
 - Perform feature engineering
 
 3. **Exploratory Data Analysis:**
@@ -92,7 +94,9 @@ The dataset consists of the following variables:
 - Formulate initial questions for further analysis
 
 4. **Baseline Modeling:**
-- Linear regression
+- Linear Regression
+- Random Forest Regressor
+- XGBoost Regressor
 - Evaluation metrics: MAE and R-squared
 - Interpret model coefficients 
 
@@ -102,12 +106,12 @@ The dataset consists of the following variables:
 - Word Embedding
 
 6. **Advanced Modeling**
-- Random Forest Regressor
-- XGBoost Regressor
-- Evaluation metrics: MAE and R-squared
+- Fine tune hyperparameters
+- Cross validation
+- Grid search 
 
 7. **Summary & Business Implications**
-- Overall summary of the findings
+- Overall summary of the findings 
 - Limitations and Next steps
 - Business objectives and impacts on the society 
 
@@ -123,8 +127,13 @@ Folders:
     c.PartIII_NLP_and_Advanced_Modeling.ipynb
     
  3. **Data** : All the dataset CSVs
+ 
+ 4. **Streamlit** : Consists of datasets to execute the streamlit app
+ a. **Streamlit_Demo.py** is the app python file
+ b. **rf_model.pkl** is the random forest model pickle file
+ c. **cleaned_dataset.csv** is the pretrained dataset needed to run the model
 
- 4. **readme.md** : Details about this project.
+ 5. **readme.md** : Details about this project.
 
 ## Notebook Usage Instructions
 
@@ -136,7 +145,22 @@ To run this entire project download all the files in the **Notebooks** folder in
 2. PartII_Advanced_EDA_and_Modeling.ipynb
 3. PartIII_NLP_and_Advanced_Modeling.ipynb
 
-The data files(CSVs) for each of these notebboks is present in the **'Data'** folder:
+The data files(CSVs) for each of these notebboks is present in the **'Data'** folder: job_postings.csv, clean_linkedin_job_postings.csv, preprocessed_linkedin_job_posting.csv
+
+PartI_LinkedIn_Preliminary_EDA.ipynb
+- Load the dataset 'job_postings.csv' from the 'Data' folder.
+- Basic exploratory data analysis (EDA) has been performed to understand the overall structure of the data, address data quality issues, visualize key patterns among different job features, explore basic statistics, and check for outliers and correlations for modeling in the following notebooks.
+
+PartII_Advanced_EDA_and_Modeling.ipynb
+- Load the 'clean_linkedin_job_postings.csv' csv file from the 'Data' folder.
+- Advanced EDA and preprocessing have been conducted to prepare a dataset for modeling (i.e., converting categorical variables into dummies through one hot encoding).
+- The baseline modeling of linear regression, random forest, and XGBoost have been performed. 
+- The models have been evaluated using standard metrics of Mean Absolute Error (MAE) and R-squared. 
+
+PartIII_NLP_and_Advanced_Modeling.ipynb
+- Load the 'preprocessed_linkedin_job_posting.csv' csv file from the 'Data' folder.
+- Random Forest and XGBoost Regressor have been performed with cross-validation and hyperparameter-tuning to improve the model performance.
+- The models have been evaluated using standard metrics of Mean Absolute Error (MAE) and R-squared.
 
 ## Acknowledgements and Source
 **Source:** https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data?select=job_postings.csv
