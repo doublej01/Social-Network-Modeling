@@ -72,7 +72,7 @@ def main():
                     4. Advanced modeling, such as Random Forest and XGBoost Regressor to uncover relationships between views and different job attributes.
         """)    
         st.subheader("Additional Insights", divider='blue')
-       # st.image('./qrGit.png', caption="Redirecting to the project repository in GitHub", width=300)
+        st.image('./gitqr.png', caption="Redirecting to the project repository in GitHub", width=300)
 
     elif pages == "Projected View Count":
         st.header("Forecasting Views on LinkedIn Job Listings", divider='blue')
